@@ -1,19 +1,12 @@
 #define SQUARE(n)(n * n)
 #define CUBE(n)(n * n * n)
 
-#define EXP_SLOW(n)((5 * CUBE(n)) / 4) // (5 * (n)^3) / 4
-#define EXP_FAST(n)((4 * CUBE(n)) / 5) // (4 * (n)^3) / 5
+#define EXP_SLOW(n)(CUBE(n)) // (n)^3
+#define EXP_FAST(n)(CUBE(n)) // (n)^3
 #define EXP_MEDIUM_FAST(n)(CUBE(n)) // (n)^3
-#define EXP_MEDIUM_SLOW(n)((6 * CUBE(n)) / 5 - (15 * SQUARE(n)) + (100 * n) - 140)    // (6 * (n)^3) / 5 - (15 * (n)^2) + (100 * n) - 140
-#define EXP_ERRATIC(n)                                      \
-     (n <= 50) ? ((100 - n) * CUBE(n) /  50)                \
-    :(n <= 68) ? ((150 - n) * CUBE(n) / 100)                \
-    :(n <= 98) ? (((1911 - 10 * n) / 3) * CUBE(n) / 500)    \
-    :            ((160 - n) * CUBE(n) / 100)
-#define EXP_FLUCTUATING(n)                                  \
-     (n <= 15) ? (((n + 1) / 3 + 24) * CUBE(n) / 50)        \
-    :(n <= 36) ? ((n + 14)           * CUBE(n) / 50)        \
-    :            (((n / 2) + 32)     * CUBE(n) / 50)
+#define EXP_MEDIUM_SLOW(n)(CUBE(n)) // (n)^3
+#define EXP_ERRATIC(n)(CUBE(n)) // (n)^3
+#define EXP_FLUCTUATING(n)(CUBE(n)) // (n)^3
 
 const u32 gExperienceTables[][MAX_LEVEL + 1] =
 {
@@ -119,6 +112,103 @@ const u32 gExperienceTables[][MAX_LEVEL + 1] =
         EXP_MEDIUM_FAST(98),
         EXP_MEDIUM_FAST(99),
         EXP_MEDIUM_FAST(100),
+        EXP_MEDIUM_FAST(101),
+        EXP_MEDIUM_FAST(102),
+        EXP_MEDIUM_FAST(103),
+        EXP_MEDIUM_FAST(104),
+        EXP_MEDIUM_FAST(105),
+        EXP_MEDIUM_FAST(106),
+        EXP_MEDIUM_FAST(107),
+        EXP_MEDIUM_FAST(108),
+        EXP_MEDIUM_FAST(109),
+        EXP_MEDIUM_FAST(110),
+        EXP_MEDIUM_FAST(111),
+        EXP_MEDIUM_FAST(112),
+        EXP_MEDIUM_FAST(113),
+        EXP_MEDIUM_FAST(114),
+        EXP_MEDIUM_FAST(115),
+        EXP_MEDIUM_FAST(116),
+        EXP_MEDIUM_FAST(117),
+        EXP_MEDIUM_FAST(118),
+        EXP_MEDIUM_FAST(119),
+        EXP_MEDIUM_FAST(120),
+        EXP_MEDIUM_FAST(121),
+        EXP_MEDIUM_FAST(122),
+        EXP_MEDIUM_FAST(123),
+        EXP_MEDIUM_FAST(124),
+        EXP_MEDIUM_FAST(125),
+        EXP_MEDIUM_FAST(126),
+        EXP_MEDIUM_FAST(127),
+        EXP_MEDIUM_FAST(128),
+        EXP_MEDIUM_FAST(129),
+        EXP_MEDIUM_FAST(130),
+        EXP_MEDIUM_FAST(131),
+        EXP_MEDIUM_FAST(132),
+        EXP_MEDIUM_FAST(133),
+        EXP_MEDIUM_FAST(134),
+        EXP_MEDIUM_FAST(135),
+        EXP_MEDIUM_FAST(136),
+        EXP_MEDIUM_FAST(137),
+        EXP_MEDIUM_FAST(138),
+        EXP_MEDIUM_FAST(139),
+        EXP_MEDIUM_FAST(140),
+        EXP_MEDIUM_FAST(141),
+        EXP_MEDIUM_FAST(142),
+        EXP_MEDIUM_FAST(143),
+        EXP_MEDIUM_FAST(144),
+        EXP_MEDIUM_FAST(145),
+        EXP_MEDIUM_FAST(146),
+        EXP_MEDIUM_FAST(147),
+        EXP_MEDIUM_FAST(148),
+        EXP_MEDIUM_FAST(149),
+        EXP_MEDIUM_FAST(150),
+        EXP_MEDIUM_FAST(151),
+        EXP_MEDIUM_FAST(152),
+        EXP_MEDIUM_FAST(153),
+        EXP_MEDIUM_FAST(154),
+        EXP_MEDIUM_FAST(155),
+        EXP_MEDIUM_FAST(156),
+        EXP_MEDIUM_FAST(157),
+        EXP_MEDIUM_FAST(158),
+        EXP_MEDIUM_FAST(159),
+        EXP_MEDIUM_FAST(160),
+        EXP_MEDIUM_FAST(161),
+        EXP_MEDIUM_FAST(162),
+        EXP_MEDIUM_FAST(163),
+        EXP_MEDIUM_FAST(164),
+        EXP_MEDIUM_FAST(165),
+        EXP_MEDIUM_FAST(166),
+        EXP_MEDIUM_FAST(167),
+        EXP_MEDIUM_FAST(168),
+        EXP_MEDIUM_FAST(169),
+        EXP_MEDIUM_FAST(170),
+        EXP_MEDIUM_FAST(171),
+        EXP_MEDIUM_FAST(172),
+        EXP_MEDIUM_FAST(75),
+        EXP_MEDIUM_FAST(76),
+        EXP_MEDIUM_FAST(77),
+        EXP_MEDIUM_FAST(78),
+        EXP_MEDIUM_FAST(79),
+        EXP_MEDIUM_FAST(80),
+        EXP_MEDIUM_FAST(81),
+        EXP_MEDIUM_FAST(82),
+        EXP_MEDIUM_FAST(83),
+        EXP_MEDIUM_FAST(84),
+        EXP_MEDIUM_FAST(85),
+        EXP_MEDIUM_FAST(86),
+        EXP_MEDIUM_FAST(87),
+        EXP_MEDIUM_FAST(88),
+        EXP_MEDIUM_FAST(89),
+        EXP_MEDIUM_FAST(90),
+        EXP_MEDIUM_FAST(91),
+        EXP_MEDIUM_FAST(92),
+        EXP_MEDIUM_FAST(93),
+        EXP_MEDIUM_FAST(94),
+        EXP_MEDIUM_FAST(95),
+        EXP_MEDIUM_FAST(96),
+        EXP_MEDIUM_FAST(97),
+        EXP_MEDIUM_FAST(98),
+        EXP_MEDIUM_FAST(99),
     },
     { // Erratic
         0, // 0
