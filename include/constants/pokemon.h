@@ -194,7 +194,7 @@
 #define MON_DATA_EXIOLITE_ENABLED  91
 
 #define MIN_LEVEL 1
-#define MAX_LEVEL 100
+#define MAX_LEVEL 255
 
 #define OT_ID_PLAYER_ID       0
 #define OT_ID_PRESET          1
