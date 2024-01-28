@@ -82,7 +82,7 @@ const u8 Easy_Mode_Min_Wild_Pokemon_Level[]      = {4,10,15,20,25,30,35,40,45,55
 const u8 Normal_Mode_Trainer_Max_Pokemon_Number[]      = {2,3,3,4,4,4,5,5,6,6,6};				//Trainers Number of Pokemon
 const u8 Normal_Mode_Boss_Pokemon_Number[]             = {3,4,4,5,5,6,6,6,6,6,6};				//Gym Leaders Number of Pokemon
 const u8 Normal_Mode_Double_Max_Pokemon_Number[]       = {1,2,2,2,2,2,3,3,3,3,3};				//Number of Pokemon in a Double Battle
-const u8 Normal_Mode_Boss_Pokemon_Min_Level[] 	       = {13,19,25,31,37,43,49,60,68,76,82};	//Levels for Gym Leaders
+const u8 Normal_Mode_Boss_Pokemon_Min_Level[] 	       = {13,19,25,31,37,43,49,60,68,255,255};	//Levels for Gym Leaders
 const u8 Normal_Mode_Trainer_Pokemon_Min_Level[]       =  {7,12,18,24,30,36,42,48,55,65,70};	//Levels for Trainer Pokemon
 const u8 Normal_Mode_Min_Wild_Pokemon_Level[]          =  {5,10,15,20,25,31,37,43,50,60,65};	//Levels for Wild Pokemon
 
@@ -97,7 +97,7 @@ const u8 Hard_Mode_Min_Wild_Pokemon_Level[]          =  {5,11,16,21,26,32,38,45,
 //Order Mode
 const u8 Normal_Mode_Min_Wild_Pokemon_Level_Order[] = {5,8,11,14,17,20,23,26,29,32,35,38,41,44,47,50,53,56,59,62,65};
 
-#define LEVEL_SCALING_FOR_TRAINERS FALSE
+#define LEVEL_SCALING_FOR_TRAINERS TRUE
 
 u16 SplitEvolutions(u16 basespecies, u8 level);
 u16 CheckforLegendary(u16 species);
