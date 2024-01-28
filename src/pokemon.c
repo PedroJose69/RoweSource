@@ -3804,7 +3804,7 @@ u16 GetExioliteSpecies(u16 basespecies, u8 level){
     SetMonData(mon, field, &n);                                 \
 }
 
-const u16 LevelCaps[NUM_SOFT_CAPS] = {16, 23, 29, 36, 43, 51, 57, 69, 77, 100};
+const u16 LevelCaps[NUM_SOFT_CAPS] = {16, 23, 29, 36, 43, 51, 57, 69, 77, 255};
 
 void CalculateMonStats(struct Pokemon *mon)
 {
