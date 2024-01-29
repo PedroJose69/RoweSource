@@ -194,8 +194,8 @@ u8 GetCurrentMovePowerLimit(){
 }
 
 u8 checkLevel(u8 level){
-	if(level >= 255)
-		return 255;
+	if(level >= 100)
+		return 100;
 	else
 		return level;
 }
